@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+ }
+
+ .logo{
+    background-color: #bd1a8d;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .logo h1{
+    font-family: sans-serif;
+    color: white;
+    font-size: 60px;
+  }
+ 
+  
+  .secondLogo{
+    background-color: #3e3e3e;
+    width: 100%;
+    height: 60px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .secondLogo a{
+    margin: 0;
+    font-size: 20px;
+    padding-right: 20px;
+    color: white;
+    text-decoration: none;
+  }
+
+  .main img{
+    padding-top: 2px;
+    height: auto;
+    width: 100%;
+  }

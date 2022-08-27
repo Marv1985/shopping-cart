@@ -4,7 +4,14 @@ import logo from "/home/marv/the-odin-project/react-projects/shopping-cart/src/I
 function HomeHeader() {
   return (
     <div>
-      <img src={logo} alt="logo" />
+    <div  className="logo">
+      <h1>GAME</h1>
+    </div>
+    <div className="secondLogo">
+    <a href="">Shop</a>
+    <a href="">Basket</a>
+    </div>
+
     </div>
   );
 }
