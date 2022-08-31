@@ -1,15 +1,57 @@
 import React from "react";
+import { useState } from "react";
 
 function Buttons() {
+  const [task, setTask] = useState([]);
+  const [item, setItem] = useState(0);
+
+  function handleIncrement() {
+    if (item < 10) {
+      setItem((prevCount) => prevCount + 1);
+    }
+  }
+
+  function handleDecrement() {
+    if (item > 0) {
+      setItem((prevCount) => prevCount - 1);
+    }
+  }
+
+  function handleChange(e) {
+    setItem(Number(e.target.value));
+  }
+
+  function onSubmit(e) {
+    e.preventDefault();
+    let tempArr = task;
+    tempArr.push(item);
+    setTask(tempArr);
+    setItem(0);
+    console.log(task);
+  }
+
   return (
     <div className="buttons">
-      <form action="">
+      <form onSubmit={onSubmit}>
         QTY:
-        <input type="text" pattern="^\d{1,2}$" />
-        <button className="adjust">+</button>
-        <button className="adjust">-</button>
+        <input
+          value={item}
+          onChange={handleChange}
+          type="number"
+          min="0"
+          max="10"
+          required
+        />
+        <button type="button" onClick={handleIncrement} className="adjust">
+          +
+        </button>
+        <button type="button" onClick={handleDecrement} className="adjust">
+          -
+        </button>
         <div>
-          <button className="submit">Submit</button>
+          <button type="submit" className="submit">
+            Add
+          </button>
         </div>
       </form>
     </div>
