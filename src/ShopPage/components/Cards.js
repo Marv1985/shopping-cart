@@ -15,35 +15,59 @@ function Cards() {
     <div className="cards">
       <div className="label">
         <img src={gowRagnarok} alt="pic" />
-        <Buttons />
+        <div>
+          <div>£50</div>
+          <Buttons />
+        </div>
       </div>
       <div className="label">
         <img src={ps5} alt="pic" />
-        <Buttons />
+        <div>
+          <div>£500</div>
+          <Buttons />
+        </div>
       </div>
       <div className="label">
         <img src={xbox} alt="pic" />
-        <Buttons />
+        <div>
+          <div>£500</div>
+          <Buttons />
+        </div>
       </div>
       <div className="label">
         <img src={godofwar} alt="pic" />
-        <Buttons />
+        <div>
+          <div>£50</div>
+          <Buttons />
+        </div>
       </div>
       <div className="label">
         <img src={last1} alt="pic" />
-        <Buttons />
+        <div>
+          <div>£50</div>
+          <Buttons />
+        </div>
       </div>
       <div className="label">
         <img src={last2} alt="pic" />
-        <Buttons />
+        <div>
+          <div>£50</div>
+          <Buttons />
+        </div>
       </div>
       <div className="label">
         <img src={uncharterd4} alt="pic" />
-        <Buttons />
+        <div>
+          <div>£50</div>
+          <Buttons />
+        </div>
       </div>
       <div className="label">
         <img src={uncharterd5} alt="pic" />
-        <Buttons />
+        <div>
+          <div>£50</div>
+          <Buttons />
+        </div>
       </div>
     </div>
   );

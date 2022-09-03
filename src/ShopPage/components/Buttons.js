@@ -1,9 +1,11 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { ItemList } from "../../ItemList";
 
 function Buttons() {
   const [task, setTask] = useState([]);
   const [item, setItem] = useState(0);
+  const [items, setItems] = useContext(ItemList);
 
   function handleIncrement() {
     if (item < 10) {
@@ -25,9 +27,10 @@ function Buttons() {
     e.preventDefault();
     let tempArr = task;
     tempArr.push(item);
-    setTask(tempArr);
+    setTask(tempArr.reduce((totalTask, tasks) => totalTask + tasks, 0));
     setItem(0);
-    console.log(task);
+    console.log(...task);
+    setItems(task);
   }
 
   return (

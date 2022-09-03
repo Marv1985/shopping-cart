@@ -39,6 +39,9 @@ body {
   color: #fff;
   text-decoration: none;
 }
+body {
+  width: 100%;
+}
 .cards img {
   height: 250px;
   width: auto;
@@ -56,6 +59,11 @@ body {
   height: 400px;
   width: 850px;
   border: 1px solid #000;
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 .buttons button,
 .buttons input {
@@ -79,4 +87,4 @@ body {
   width: 100px;
   padding: 7px;
 }
-/*# sourceMappingURL=main.09d7a529.chunk.css.map */
+/*# sourceMappingURL=main.0555129e.chunk.css.map */
