@@ -2,8 +2,10 @@ import React from "react";
 import { useState, useContext } from "react";
 import { ItemList } from "../../ItemList";
 
+const datas = [];
+
 function Buttons() {
-  const [task, setTask] = useState([]);
+  //const [task, setTask] = useState([]);
   const [item, setItem] = useState(0);
   const [items, setItems] = useContext(ItemList);
 
@@ -25,12 +27,11 @@ function Buttons() {
 
   function onSubmit(e) {
     e.preventDefault();
-    let tempArr = task;
-    tempArr.push(item);
-    setTask(tempArr.reduce((totalTask, tasks) => totalTask + tasks, 0));
+    datas.push(item);
     setItem(0);
-    console.log(...task);
-    setItems(task);
+    let data = datas.reduce((totalTask, tasks) => totalTask + tasks, 0);
+    console.log(data);
+    setItems(data);
   }
 
   return (
