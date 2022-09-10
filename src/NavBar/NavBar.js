@@ -14,7 +14,7 @@ function NavBar() {
         <Link to="/shop">Shop</Link>
       </div>
       <div>
-        <Link to="/basket">Basket ( {items} )</Link>
+        <Link to="/basket">Basket {items}</Link>
       </div>
     </div>
   );
