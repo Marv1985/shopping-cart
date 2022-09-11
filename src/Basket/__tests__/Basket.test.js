@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import Basket from "./Basket";
+import Basket from "/home/marv/the-odin-project/react-projects/shopping-cart/src/Basket/Basket.js";
 
 describe("Basket component", () => {
   it("renders correct heading", () => {

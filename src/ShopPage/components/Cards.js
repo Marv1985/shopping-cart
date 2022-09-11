@@ -14,56 +14,56 @@ function Cards() {
   return (
     <div className="cards">
       <div className="label">
-        <img src={gowRagnarok} alt="pic" />
+        <img data-testid="1" src={gowRagnarok} alt="gowRagnarok" />
         <div>
           <div>£50</div>
           <Buttons />
         </div>
       </div>
       <div className="label">
-        <img src={ps5} alt="pic" />
+        <img data-testid="2" src={ps5} alt="ps5" />
         <div>
           <div>£500</div>
           <Buttons />
         </div>
       </div>
       <div className="label">
-        <img src={xbox} alt="pic" />
+        <img data-testid="3" src={xbox} alt="xbox" />
         <div>
           <div>£500</div>
           <Buttons />
         </div>
       </div>
       <div className="label">
-        <img src={godofwar} alt="pic" />
+        <img data-testid="4" src={godofwar} alt="godofwar" />
         <div>
           <div>£50</div>
           <Buttons />
         </div>
       </div>
       <div className="label">
-        <img src={last1} alt="pic" />
+        <img data-testid="5" src={last1} alt="last1" />
         <div>
           <div>£50</div>
           <Buttons />
         </div>
       </div>
       <div className="label">
-        <img src={last2} alt="pic" />
+        <img data-testid="6" src={last2} alt="last2" />
         <div>
           <div>£50</div>
           <Buttons />
         </div>
       </div>
       <div className="label">
-        <img src={uncharterd4} alt="pic" />
+        <img data-testid="7" src={uncharterd4} alt="uncharterd4" />
         <div>
           <div>£50</div>
           <Buttons />
         </div>
       </div>
       <div className="label">
-        <img src={uncharterd5} alt="pic" />
+        <img data-testid="8" src={uncharterd5} alt="uncharterd5" />
         <div>
           <div>£50</div>
           <Buttons />

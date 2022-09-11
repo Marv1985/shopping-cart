@@ -1,9 +1,9 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import MainSection from "/home/marv/the-odin-project/react-projects/shopping-cart/src/HomePage/components/MainSection.js";
-import HomeHeader from "./components/HomeHeader";
+import HomeHeader from "/home/marv/the-odin-project/react-projects/shopping-cart/src/HomePage/components/HomeHeader.js";
 
-describe("The image component", () => {
+describe("The Main image component", () => {
   it("alt & src contains correct value", () => {
     render(<MainSection />);
     const testImage = document.querySelector("img");

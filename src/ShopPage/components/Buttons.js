@@ -5,7 +5,6 @@ import { ItemList } from "../../ItemList";
 const datas = [];
 
 function Buttons() {
-  //const [task, setTask] = useState([]);
   const [item, setItem] = useState(0);
   const [items, setItems] = useContext(ItemList);
 
@@ -46,14 +45,24 @@ function Buttons() {
           max="10"
           required
         />
-        <button type="button" onClick={handleIncrement} className="adjust">
+        <button
+          type="button"
+          data-testid="inc"
+          onClick={handleIncrement}
+          className="adjust"
+        >
           +
         </button>
-        <button type="button" onClick={handleDecrement} className="adjust">
+        <button
+          type="button"
+          data-testid="dec"
+          onClick={handleDecrement}
+          className="adjust"
+        >
           -
         </button>
         <div>
-          <button type="submit" className="submit">
+          <button type="submit" data-testid="add" className="submit">
             Add
           </button>
         </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
-import { ItemList } from "../ItemList";
+import { ItemList } from "../../ItemList";
 import NavBar from "/home/marv/the-odin-project/react-projects/shopping-cart/src/NavBar/NavBar.js";
 
 function MockNavbar({ value }) {
