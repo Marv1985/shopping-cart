@@ -1,0 +1,32 @@
+.homepage {
+    display: flex;
+    padding: 5rem 0;
+    min-height: calc(100vh - 5.2rem) !important;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.container img {
+    width: min(70rem, 100%);
+    object-fit: contain;
+    border-radius: .5rem;
+}
+
+.container a {
+    border: .2rem solid #646cff;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    transition: all .2s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .container a:hover {
+        background-color: #646cff;
+        color: white;
+    }
+}

@@ -1,0 +1,52 @@
+.cardsContainer {
+    display: flex;
+    gap: 2rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: min(30rem, 100%);
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    border: .1rem solid #213547;
+    height: fit-content;
+}
+
+.card img {
+    max-height: clamp(12rem, 3.41vi + 10.64rem, 15rem);
+    object-fit: contain;
+}
+
+.cardsContainer ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.cardsContainer p {
+    line-height: 1.2;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+
+.price {
+    font-weight: 700;
+}
+
+.quantity {
+    display: flex;
+    align-items: end;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.quantity input {
+    width: 5rem;
+}

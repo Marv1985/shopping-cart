@@ -1,0 +1,54 @@
+.navSpacer {
+    height: 5.2rem;
+    width: 100%;
+}
+
+.header {
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom: .2rem solid #213547;
+    background-color: white;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links div {
+    flex: 1;
+}
+
+.navigation ul a {
+    border-bottom: .2rem solid transparent;
+    transition: all .2s ease;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+}
+
+.checkout {
+    display: flex;
+    gap: .5rem;
+    font-weight: 700;
+    font-size: 2rem;
+    align-items: center;
+    line-height: 1;
+    justify-content: flex-end;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .navigation ul a:hover {
+       border-color: #646cff;
+    }
+}

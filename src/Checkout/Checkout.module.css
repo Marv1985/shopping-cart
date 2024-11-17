@@ -1,0 +1,10 @@
+.checkout {
+    min-height: calc(100vh - 5.2rem) !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkout h1 {
+    text-align: center;
+}

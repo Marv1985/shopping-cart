@@ -1,0 +1,10 @@
+.shoppingPage {
+    padding: 5rem 0;
+    min-height: calc(100vh - 5.2rem) !important;
+}
+
+.shoppingPage > div {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
