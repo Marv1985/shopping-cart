@@ -6,7 +6,7 @@ import { useContext } from "react";
 import { HeaderContext } from '../HeaderContext'
 
 const Header = () => {
-    const { headerData } = useContext(HeaderContext);
+    const { totalQuantity } = useContext(HeaderContext);
 
     return (
         <>
@@ -29,10 +29,10 @@ const Header = () => {
                     <Link to="/checkout">
                         <img src={cart} alt="" />
                     </Link>
-                    {headerData ? (
-                        <p>{headerData.totalQuantity}</p>
+                    {totalQuantity ? (
+                        <p>{totalQuantity}</p>
                     ) : (
-                        <p>Loading...</p>
+                        <p>0</p>
                     )}
                 </div>
             </div>
